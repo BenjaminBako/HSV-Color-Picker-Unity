@@ -270,6 +270,7 @@ namespace HSVPicker
             Setup.HsvSliders.Toggle(Setup.ShowHsv);
             Setup.RgbSliders.Toggle(Setup.ShowRgb);
 
+            onHSVChanged.Invoke(_hue, _saturation, _brightness);
 
             UpdateColorToggleText();
         }
